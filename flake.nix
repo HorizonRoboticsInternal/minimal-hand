@@ -15,6 +15,7 @@
     overlays.dev = nixpkgs.lib.composeManyExtensions [
       inputs.ml-pkgs.overlays.torch-family
       inputs.ml-pkgs.overlays.jax-family
+      inputs.ml-pkgs.overlays.math      
 
       # You can put your other overlays here, inline or with import. For example
       # if you want to put an inline overlay, uncomment below:
@@ -50,6 +51,10 @@
           transforms3d
           keyboard
           opencv4
+          chumpy
+
+          click
+          loguru
         ]);
 
         name = "minimal-hand";
