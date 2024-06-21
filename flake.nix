@@ -46,6 +46,10 @@
           numpy
           pandas
           tensorflowWithCuda
+          pygame
+          transforms3d
+          keyboard
+          opencv4
         ]);
 
         name = "minimal-hand";
